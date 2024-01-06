@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NewsletterFirebaseService } from 'src/app/shared/services/newsletter-firebase.service';
+import { NewsletterFirebaseStore } from '../../stores/newsletter-firebase.store';
 
 @Component({
   selector: 'app-newsletter',
@@ -10,7 +10,7 @@ import { NewsletterFirebaseService } from 'src/app/shared/services/newsletter-fi
 export class NewsletterComponent {
 	newsletter$: Observable<any[]>;
 
-	constructor(private newsletterService: NewsletterFirebaseService) {
-	  this.newsletter$ = newsletterService.getData();
+	constructor(private newsletterStore: NewsletterFirebaseStore) {
+	  this.newsletter$ = newsletterStore.getData();
 	}
 }

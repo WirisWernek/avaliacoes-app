@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ReviewsFirebaseService } from 'src/app/shared/services/reviews-firebase.service';
+import { ReviewsFirebaseStore } from '../../stores/reviews-firebase.store';
 
 @Component({
   selector: 'app-avaliacoes',
@@ -10,7 +10,7 @@ import { ReviewsFirebaseService } from 'src/app/shared/services/reviews-firebase
 export class AvaliacoesComponent {
   avaliacoes$: Observable<any[]>;
 
-  constructor(private reviewService: ReviewsFirebaseService) {
-    this.avaliacoes$ = reviewService.getData();
+  constructor(private reviewStore: ReviewsFirebaseStore) {
+    this.avaliacoes$ = reviewStore.getData();
   }
 }

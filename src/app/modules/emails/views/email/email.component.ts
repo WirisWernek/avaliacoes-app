@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { EmailFirebaseStore } from '../../stores/email-firebase.service';
 
 @Component({
   selector: 'app-email',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./email.component.scss']
 })
 export class EmailComponent {
+	emails$: Observable<any[]>;
 
+	constructor(private emailStore: EmailFirebaseStore) {
+	  this.emails$ = emailStore.getData();
+	}
 }
