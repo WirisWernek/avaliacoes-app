@@ -1,5 +1,4 @@
 <div class="flex w-screen h-max flex-col justify-center items-center pb-24">
-	<h2 class="text-4xl font-extrabold dark:text-white py-8">Emails</h2>
 	<app-card-email class="flex flex-col justify-center items-center mb-2" *ngFor="let item of emails$ | async"
 	[email]="item" ></app-card-email>
 </div>

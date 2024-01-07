@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
+import { TitleService } from 'src/app/services/title.service';
 import { ReviewsFirebaseStore } from '../../stores/reviews-firebase.store';
 
 @Component({
@@ -10,7 +11,8 @@ import { ReviewsFirebaseStore } from '../../stores/reviews-firebase.store';
 export class AvaliacoesComponent {
   avaliacoes$: Observable<any[]>;
 
-  constructor(private reviewStore: ReviewsFirebaseStore) {
+  constructor(private reviewStore: ReviewsFirebaseStore, private titleService: TitleService) {
     this.avaliacoes$ = reviewStore.getData();
+	titleService.setTitle('Avaliações');
   }
 }

@@ -7,11 +7,15 @@ import { environment } from 'src/environments/environment.development';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-	BottomNavComponent
+	BottomNavComponent,
+ NavbarComponent,
+ LayoutComponent
   ],
   imports: [
     BrowserModule,
