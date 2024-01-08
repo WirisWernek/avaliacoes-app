@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { TitleService } from 'src/app/services/title.service';
+import { TitleService } from 'src/app/shared/services/title.service';
 import { NewsletterFirebaseStore } from '../../stores/newsletter-firebase.store';
 
 @Component({

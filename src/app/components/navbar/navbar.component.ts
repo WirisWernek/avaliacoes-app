@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TitleService } from 'src/app/services/title.service';
+import { TitleService } from 'src/app/shared/services/title.service';
 
 @Component({
 	selector: 'app-navbar',
@@ -11,6 +11,6 @@ export class NavbarComponent implements OnInit {
 	constructor(private titleService: TitleService) {}
 
 	ngOnInit() {
-		this.titleService.getTitle().subscribe((x) => (this.title = x));
+		this.titleService.getTitle().subscribe((title) => (this.title = title));
 	}
 }
