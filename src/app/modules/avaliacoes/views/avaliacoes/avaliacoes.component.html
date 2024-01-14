@@ -1,0 +1,4 @@
+<div class="flex w-screen h-max flex-col justify-center items-center pb-24">
+	<app-card-avaliacao class="flex flex-col justify-center items-center mb-2" *ngFor="let item of avaliacoes$ | async"
+		[avaliacao]="item"></app-card-avaliacao>
+</div>
