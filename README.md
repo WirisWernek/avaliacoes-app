@@ -1,26 +1,16 @@
-# Avaliacoes ![version](https://img.shields.io/badge/version-1.0.0-blue)
+# Avaliacoes
 
-## Sobre
+<div align="center">
+	<img width="800" src="https://i.ibb.co/t2FkHRz/Avalia-es-V2.png">
+</div>
+
+## 🔥 Sobre
 
 A ideia do projeto é ser um centralizador dos dados gerados pelo cartão de visitas digital.
 
 Atualmente o projeto se encontra publicado na [Vercel](https://avaliacoes-wiriswernek.vercel.app/), e usa como base o Angular com Typescript, Tailwind com Flowbite e Firebase.
 
-Segue abaixo uma prévia da aplicação.
-
-<!-- <h2 align="center">Preview Mobile</h2>
-<div align="center">
-	<img width="400" src="./docs/images/mobile.png">
-</div>
-
-<h2 align="center">Preview Desktop</h2>
-<div align="center">
-	<img width="800" src="./docs/images/macbook.png">
-</div> -->
-
-
-
-## Como executar esta aplicação?
+## 🔨 Como executar esta aplicação?
 
 ### Padrão
 Para rodar a aplicação voce deve:
@@ -38,10 +28,9 @@ Por ser uma aplicação focada em mobile para uma melhor experiência é recomen
 
 Também é possível utilizar a extensão [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk) disponível para Google Chrome e Firefox.
 
-## Versões dos recursos da aplicação
-- angular/cli <img style="vertical-align: middle;" src="https://img.shields.io/badge/version-16.2.10-blue"/>
-- node <img style="vertical-align: middle;" src="https://img.shields.io/badge/version-16.20.1-blue"/>
-- typescript <img style="vertical-align: middle;" src="https://img.shields.io/badge/version-5.1.3-blue"/>
-- firebase <img style="vertical-align: middle;" src="https://img.shields.io/badge/version-10.5.2-blue"/>
-- tailwind <img style="vertical-align: middle;" src="https://img.shields.io/badge/version-3.3.5-blue"/>
-- flowbite <img style="vertical-align: middle;" src="https://img.shields.io/badge/version-2.0.0-blue"/>
+## 📦 Tecnologias usadas
+- ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
