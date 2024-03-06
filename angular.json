@@ -116,7 +116,7 @@
           "builder": "@angular/fire:deploy",
           "options": {
             "version": 2,
-            "browserTarget": "avaliacoes:build:production"
+            "buildTarget": "avaliacoes:build:production"
           }
         },
         "lint": {
