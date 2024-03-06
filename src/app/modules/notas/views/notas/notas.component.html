@@ -1,4 +1,5 @@
 <div class="flex w-screen h-max flex-col justify-center items-center pb-24">
-	<app-card-anotacao class="flex flex-col justify-center items-center mb-2" *ngFor="let item of anotacoes$ | async"
-	[anotacao]="item"></app-card-anotacao>
+	@for (item of anotacoes$ | async; track $index) {
+		<app-card-anotacao class="flex flex-col justify-center items-center mb-2" [anotacao]="item"></app-card-anotacao>
+	}
 </div>

@@ -1,4 +1,5 @@
 <div class="flex w-screen h-max flex-col justify-center items-center pb-24">
-	<app-card-newsletter class="flex flex-col justify-center items-center mb-2" *ngFor="let item of newsletter$ | async"
-		[inscrito]="item"></app-card-newsletter>
+	@for (item of newsletter$ | async; track $index) {
+		<app-card-newsletter class="flex flex-col justify-center items-center mb-2" [inscrito]="item"></app-card-newsletter>
+	}
 </div>
