@@ -21,7 +21,7 @@ html {
 body{
 	background-color: #f0ffeb;
 	background-attachment: fixed;
-	background-image: url('/assets/images/feedback.svg');
+	background-image: url('assets/images/feedback.svg');
 	background-size: 20rem;
 	background-repeat: no-repeat;
 	background-position: right bottom;
@@ -29,7 +29,7 @@ body{
 
 @media (max-width: 600px) {
 	body {
-		background-image: url('/assets/images/feedback.svg');
+		background-image: url('assets/images/feedback.svg');
 		background-size: 12rem;
 		background-position: center;
 	}
