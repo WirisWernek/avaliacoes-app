@@ -1,4 +1,4 @@
-<div class="flex w-screen h-max flex-col justify-center items-center pb-24">
+<div class="flex w-100 h-max flex-col justify-center items-center pb-24">
 	@for (item of emails$ | async; track $index) {
 		<app-card-email class="flex flex-col justify-center items-center mb-2" [email]="item" ></app-card-email>
 	}

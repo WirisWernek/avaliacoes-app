@@ -1,21 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { initFlowbite } from 'flowbite';
-
-interface AvaliacaoModel {
-  comentatop: string;
-  nota: string;
-}
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss'],
+	standalone: true,
+	imports: [RouterModule]
 })
 export class AppComponent implements OnInit {
+	constructor() {}
 
-  constructor(){}
-
-  ngOnInit(): void {
-    initFlowbite();
-  }
+	ngOnInit(): void {
+		initFlowbite();
+	}
 }

@@ -5,6 +5,7 @@ import { TitleService } from 'src/app/shared/services/title.service';
 	selector: 'app-navbar',
 	templateUrl: './navbar.component.html',
 	styleUrls: ['./navbar.component.scss'],
+	standalone: true
 })
 export class NavbarComponent implements OnInit {
 	title = '';
